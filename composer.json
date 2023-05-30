@@ -1,0 +1,34 @@
+{
+  "name": "kaleidpixel/ssl-expiry-checker",
+  "description": "A simple library to check the expiration date of SSL certificates for a given domain.",
+  "type": "library",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "k42k102h4t4",
+      "email": "7222225+k42k102h4t4@users.noreply.github.com"
+    }
+  ],
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "require": {
+    "php": "^7.3|^8.0",
+    "ext-openssl": "*",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "kaleidpixel\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "kaleidpixel\\Tests\\": "tests/"
+    }
+  }
+}
