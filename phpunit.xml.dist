@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="vendor/autoload.php"
-		 colors="true"
-		 verbose="true"
-		 stopOnFailure="false">
-	<testsuites>
-		<testsuite name="Kaleid Pixel Test Suite">
-			<directory>./tests/</directory>
-		</testsuite>
-	</testsuites>
-	<filter>
-		<whitelist processUncoveredFilesFromWhitelist="true">
-			<directory suffix=".php">./src/</directory>
-		</whitelist>
-	</filter>
-	<php>
-		<ini name="error_reporting" value="-1"/>
-		<server name="KERNEL_CLASS" value="kaleidpixel\SSLExpiryChecker"/>
-	</php>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd" backupGlobals="true" bootstrap="vendor/autoload.php" convertDeprecationsToExceptions="true" verbose="true" colors="true" forceCoversAnnotation="false">
+<coverage includeUncoveredFiles="true">
+	<include>
+		<directory suffix=".php">src</directory>
+	</include>
+</coverage>
+<testsuites>
+	<testsuite name="SSLExpiryCheckerTest">
+		<directory suffix=".php">tests</directory>
+	</testsuite>
+</testsuites>
 </phpunit>

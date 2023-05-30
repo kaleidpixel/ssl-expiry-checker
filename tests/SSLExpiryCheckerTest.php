@@ -5,7 +5,7 @@ namespace kaleidpixel\Tests;
 use PHPUnit\Framework\TestCase;
 use kaleidpixel\SSLExpiryChecker;
 
-abstract class SSLExpiryCheckerTest extends TestCase {
+class SSLExpiryCheckerTest extends TestCase {
 	private $checker;
 
 	protected function setUp(): void {
