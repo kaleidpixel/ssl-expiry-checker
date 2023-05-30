@@ -1,6 +1,6 @@
 # SSL Expiry Checker
 
-A simple library to check the expiration date of SSL certificates for a given domain.
+A simple library to check the expiration date of SSL certificates for a given URL.
 
 # License
 MIT License  
